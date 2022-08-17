@@ -7,7 +7,8 @@ jobs:
     steps:
       - name: Upload repo 
         uses: actions/upload-artifact@v2
-          with: code
+        with: 
+          name: code
           path: .
       - name: Clone-down
         uses: actions/checkout@v2
