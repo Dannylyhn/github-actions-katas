@@ -62,7 +62,7 @@ jobs:
         with: 
           name: artifact
           path: .
-        name: Execute component test
+        name: Execute-component-test
         run: chmod +x ci/component-test.sh && ci/component-test.sh
   Performance-test: 
     runs-on: ubuntu-latest
