@@ -35,6 +35,11 @@ jobs:
         with:
           name: docker-artifact
           path: app/build/libs/app-0.1-all.jar
+      - name: Upload-docker
+        uses: actions/upload-artifact@v2
+        with:
+          name: docker-all-files
+          path: .
   Docker-image:
     runs-on: ubuntu-latest 
     needs: [Build] 
